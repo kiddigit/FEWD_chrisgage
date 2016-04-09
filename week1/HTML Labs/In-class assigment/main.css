@@ -1,0 +1,43 @@
+
+
+header {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+body {
+	margin-right: 500px;
+	margin-left: 100px;
+	margin-top: 50px;	
+	background-color: #808080;
+}
+
+section	 {
+	color: #DCDCDC;
+	text-align: justify;
+}
+
+.title {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.people {
+	list-style-type:none;
+	color: black;
+	list-style-type:none;
+	padding-left: 20px;
+}
+
+
+p {margin-bottom: 10;
+}
+
+footer {
+	color: #DCDCDC;
+	font-size: 13px; 
+	text-align: justify;
+}
+
