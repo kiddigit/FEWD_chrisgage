@@ -1,0 +1,44 @@
+
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .photo {
+      width: 50%;
+      padding-bottom: 100%;
+   }
+}
+
+#container {
+	overflow: hidden;
+}
+
+#header {
+	text-align: center;
+	border: black;
+	margin-bottom: 25px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:50px;
+}
+
+#nav {
+	margin-bottom: 30px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:70px;
+	width: 25%;
+}
+
+.photo {
+	float:left;
+	margin-left: 20%;
+	width: 75%;
+	position: relative;
+	padding-top: 10px;
+}
+
+.photo img {
+	padding-bottom: 0;
+	outline-style: dashed;
+}
+
