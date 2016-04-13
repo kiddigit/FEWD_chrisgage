@@ -8,6 +8,13 @@
 <style>
 
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .body {
     margin: 0;
     padding: 0;
@@ -28,20 +35,19 @@ p {
 .wrapper {
     border: 1px solid blue;
     padding: 1px;
-
-
+    background-color: gray;
 }
+
 .thing1 {
     border: 1px solid blue; 
     float: left;
-
+    margin: 0 5px 0 0;
 }
 
 .content {
     border: 1px solid blue; 
     overflow: auto;
-
-    }
+}
 
 h1 {
     font-size: 72px;
@@ -81,6 +87,10 @@ img:hover {
 #footer p {
     text-align: center;
     font-size: 14px;
+    border: 1px solid blue; 
+    margin: 3px 0 0 0;
+    padding: 3px;
+    background-color: gray;
 }
 
 @media only screen and (max-width: 500px) {
@@ -105,10 +115,11 @@ img:hover {
 
 <body>
 
-<div class="wrapper">
+<!-- added clearfix here with style at top of style list-->
+<div class="wrapper clearfix">
     <h1>gage</h1>
 
-
+<!-- this is nav-->
 <div class="thing1">
     <UL>
         <li><a class="item" href=" ">about</a></li>
@@ -116,9 +127,12 @@ img:hover {
     </ul>
 </div>
 
-
+<!-- this is main body of page -->
 <div class="content"> 
     <div class="photos">
+        <a href="google.html"><img src="25612060593_b222234b86_b.jpg"></a>
+        <a href="google.html"><img src="25612060593_b222234b86_b.jpg"></a>
+        <a href="google.html"><img src="25612060593_b222234b86_b.jpg"></a>
         <a href="google.html"><img src="25612060593_b222234b86_b.jpg"></a>
         <a href="google.html"><img src="25612060593_b222234b86_b.jpg"></a>
         <a href="google.html"><img src="25612060593_b222234b86_b.jpg"></a>
@@ -126,13 +140,13 @@ img:hover {
 
 </div>
 
+
+<!-- this is footer (inside or outside last div???) -->
+</div>
+
 <div id="footer">
     <P>More stuff</p>
 </div>
-
-</div>
-
-
 
 
 </body>
