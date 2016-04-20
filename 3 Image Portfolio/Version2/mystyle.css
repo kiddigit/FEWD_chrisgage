@@ -120,7 +120,7 @@
 	        	    border: 1px solid blue;
 
 	    }
-	    img {max-width: 80%; 
+	    img {max-width: 90%; 
 		   	padding-bottom: 5px;
 	    }
 
@@ -142,14 +142,35 @@
 	    background-color: white;
 	}
 	
+	.wrapper_large {
+	    border: 0px;
+	    padding: 1px;
+	    background-color: white;
+	}
+	
+	.wrapper_large h1 {
+		padding-left: 40px;
+	}
 		.content {
 			border: 1px solid red;
 			margin-left: 90px;
 			margin-right: 90px;
 			margin-bottom: 0px;
-			margin-top:0px;
+			margin-top:-20px;
+		}
+		
+		.content_large {
+			border: 1px solid blue;
+			margin-left: 88px;
+			margin-right: 20px;
+			margin-bottom: 0px;
+			margin-top:-20px;
 		}
 
+		.content_large .photos_large a:hover {
+		background-color: white;
+	}
+		
 		.menu-btn div{
 			 float: left;
 			 padding-right: 0px;
