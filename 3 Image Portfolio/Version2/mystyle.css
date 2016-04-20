@@ -142,6 +142,7 @@
 			margin-left: 90px;
 			margin-right: 90px;
 			margin-bottom: 0px;
+			margin-top:0px;
 		}
 
 		.menu-btn div{
@@ -155,7 +156,7 @@
 			 z-index: 99;
 			 }
 
-		
+
 		/*Changing this effects width of the lines of the hamburger*/
 	
 		.menu-btn span {
@@ -170,7 +171,7 @@
 		/*Line width ends here*/
 
 			.menu-btn span:last-of-type {
-				margin-bottom: 0;
+				margin-bottom: -20px	;
 			}
 		 
 		.responsive-menu{
