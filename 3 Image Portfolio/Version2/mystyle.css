@@ -40,13 +40,13 @@
 	}
 
 	.main-nav {
-	    border: 0px solid blue; 
+	    border: 1px solid blue; 
 	    float: left;
 	    margin: 0 5px 0 0;
 	}
 
 	.content {
-	    border: 1px solid blue; 
+	    border: 0px solid blue; 
 	    overflow: auto;	
 	}
 
@@ -116,17 +116,23 @@
 
 	@media only screen and (max-width: 700px) {
 	    body {
-	        background-color: #white;
+	        background-color: white;
+	        	    border: 1px solid blue;
+
 	    }
-	    img {max-width: 100%; padding-bottom: 5px;
+	    img {max-width: 50%; 
+	    	padding-bottom: 5px;
+
 	    }
 	    h1 {
 	        font-size: 40px;
 	        margin: 10px;
 		}
-		ul {margin:0;}
-		
-		.photos_large img {max-width: 80%;		
+		ul {margin:0;
+			    border: 1px solid blue;
+		}
+
+		.photos_large img {max-width: 100%;		
 		}
 
 
@@ -137,8 +143,7 @@
 	}
 	
 		.content {
-			background-color: white;
-			border: 1px solid blue; 
+			border: 1px solid red; 
 			margin-left: 90px;
 			margin-right: 90px;
 			margin-bottom: 0px;
@@ -166,12 +171,12 @@
 			 margin-bottom: 5px;
 			 background: rgb(0,0,0);
 			 z-index: 99;
-			 
+
 		}
 		/*Line width ends here*/
 
 			.menu-btn span:last-of-type {
-				margin-bottom: -20px	;
+				margin-bottom: 0px	;
 			}
 		 
 		.responsive-menu{
