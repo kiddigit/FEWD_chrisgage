@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<title>Bad Doc</title>
+	<html>
+	<head>
+
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+	</head>
+
+	<body>
+
+	<!-- added clearfix here with style at top of style list-->
+	<div class="wrapper clearfix">
+	    <h1>gage</h1>
+
+	<!-- this is nav-->
+	<div class="menu-btn" id="menu-btn">
+	   <div></div>
+	   <span></span>
+	   <span></span>
+	   <span></span>
+
+	<div class="main-nav responsive-menu">
+	    <UL>
+	        <li><a href="#">asas</a></li>
+	        <li><a href="#">contact</a></li>
+	    </ul>
+	</div>
+	</div>
+
+	<!-- this is main body of page -->
+	<div class="content"> 
+	    <div class="photos">
+	        <a href="page1.html"><img src="IMG_2515.JPG"></a>
+	        <a href="google.html"><img src="IMG_2444.JPG"></a>
+	        <a href="google.html"><img src="IMG_2447.JPG"></a>
+	    </div>
+
+	</div>
+
+
+	<!-- this is footer (inside or outside last div???) -->
+	</div>
+
+	<div id="footer">
+	    <P>copyright chris gage | <a href="mailto:chris.gage@gmail.com?Subject=Hello%20again"</a>email me</p>
+	</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script> 
+      $(document).ready(function(){
+        $('.menu-btn').click(function(){
+          $('.responsive-menu').toggleClass('expand')
+        })
+      });
+    </script>
+
+    	</body>
+
+
+
+
+	</html>
