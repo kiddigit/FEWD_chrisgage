@@ -3,10 +3,8 @@
 		display: table;
 		clear: both;
 	}
-	
 
 	.body {
-		margin-top: 0;
 		max-height: 0;
 	}
  
@@ -36,9 +34,8 @@
 
 	.wrapper {
 	    border: 0px solid blue;
-		margin: 0;
-		padding: 0;	
-		width: 900px;
+
+		width: 1000px;
 		height: 750px;
 	}
 
@@ -77,12 +74,12 @@
 	h1 {
 	    font-size: 60px;
 	    text-align: center;
-	    margin: 0px 0 0px 0px;
+	    margin: 10px 0 20px 0px;
 	    font-family: "Garamond", Helvetica, sans-serif;
 	}
 
 	ul {
-		margin-top: 65px;
+		margin-top: 100px;
 		margin-left: 50px;
 	    padding: 0 0 0 0;
 	}
