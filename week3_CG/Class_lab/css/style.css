@@ -1,0 +1,241 @@
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: #f0efef;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+     width: 600px;
+     margin: auto;
+   }
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+#container {
+  margin: auto;
+  overflow: hidden;
+  background-color: #f0efef;
+}
+
+header {
+  background-color: #033048;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.top-nav {
+  float: right;
+  padding-bottom: 20px;
+}
+
+.main {
+  background-color: #f0efef;
+  padding-left: 40px;
+  padding-right: 20px;
+  width: 600px;
+  overflow: hidden;
+}
+
+section {
+  float: left;
+  width: 70%;
+  background-color: #f0efef;
+}
+
+.posts {
+  padding-top: 20px;
+}
+
+  .sidebars {
+    float: right;
+    width: 140px;
+  }
+
+    .aside {
+      padding-top: 0px;
+      width: 140px;
+      background-color: #f0efef;
+    }
+
+    .aside img {
+      width: 100%;
+    }
+
+.bottom {
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f9e42e;
+}
+
+footer {
+  background-color: #121212;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
+footer img {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.posts img {
+  width: 100%;
+}
+
+.sign-up-button {
+    border-radius: 5px;
+    width: 20%;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background-color: black;
+}
+
+
+
+/*TEXT STYLES*/
+
+h1 {
+  padding-top: 5px;
+  float: left;
+  margin-left: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  padding-bottom: 10px;
+  color: yellow;
+  font-weight: 800;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+.read-more {
+  text-align: right;
+  font-weight: 600;
+}
+
+em {
+  font-weight: 600;
+}
+
+footer p {
+  padding-top: 10px;
+  color: white;
+  font-size: 10px;
+}
+
+.top-nav ul {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+header li {
+  padding-right: 20px;
+  display: inline;
+  color: #f9e42e;
+}
+
+
+/*DROP CAP*/
+
+.firstLetter {
+  float: left;
+  font-size: 4.26em;
+  font-weight: 300;
+  line-height: 0.5;
+  margin: 0.205em 0.153em 0 0;
+}
+
+.firstLetter + span {
+  margin-left: -0.5em;
+}
+
+/*FORMS*/
+
+input[id=fname], select {
+  font-family: "Garamond", sans;
+  box-sizing: border-box;
+  width:80%;
+}
+input[id=lname], select {
+  font-family: "Garamond", sans;
+  box-sizing: border-box;
+  width: 80%;
+}
+input[id=tele], select {
+  font-family: "Garamond", sans;
+  box-sizing: border-box;
+  width: 68%;
+}
+input[name=gender], select {
+  font-family: "Garamond", sans;
+  box-sizing: border-box;
+  width: 20%;
+}
+input[type=submit] {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  color: red;
+}

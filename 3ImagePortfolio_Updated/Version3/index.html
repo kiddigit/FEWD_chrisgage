@@ -3,6 +3,7 @@
 	<html>
 	<head>
 
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="mystyle.css">
 
@@ -33,22 +34,31 @@
 
 	<!-- this is main body of page -->
 	<div class="content"> 
-	<h1>gage</h1>
-	    <img class="photos" src="IMG_2515.JPG">
-		<img class="photos" src="IMG_2525.JPG">
-		<img class="photos" src="IMG_2466.JPG">
-		<img class="photos" src="IMG_2207.JPG">
-		<img class="photos" src="IMG_2440.JPG">
-		<img class="photos" src="IMG_2444.JPG">
+	    <figure class="show">
+		    <img src="IMG_2515.JPG"></img>
+			</figure>
+			<figure>
+			<img src="IMG_2525.JPG"></img>
+			</figure>
+			<figure>
+			<img src="IMG_2466.JPG"></img>
+			</figure>
+			<figure>
+			<img src="IMG_2207.JPG"></img>
+			</figure>
+			<figure>
+			<img src="IMG_2440.JPG"></img>
+			</figure>
+			<figure>
+			<img src="IMG_2444.JPG"></img>
+				
+			<span class="prev">«</span>
+			<span class="next">»</span>
+			</figure>
+		</figure>
+	</div>
 	
-		
 
-
-  <div class="w3-section">
-    <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
-    <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
-  </div>
-    </div>
 
 
 	<!-- this is footer (inside or outside last div???) -->
@@ -76,32 +86,29 @@
 	
 	
 	<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("photos");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "inline";  
-  dots[slideIndex-1].className += " w3-red";
-}
+$(document).ready(function(){
+ 
+var counter = 0,
+$items = $('.content figure'),
+numItems = $items.length;
+ 
+var showCurrent = function(){
+var itemToShow = Math.abs(counter%numItems);
+$items.removeClass('show');
+$items.eq(itemToShow).addClass('show');
+};
+ 
+$('.next').on('click', function(){
+counter++;
+showCurrent();
+});
+ 
+$('.prev').on('click', function(){
+counter--;
+showCurrent();
+});
+ 
+});
 </script>
     	</body>
 

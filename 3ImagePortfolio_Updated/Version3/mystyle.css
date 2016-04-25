@@ -21,17 +21,17 @@
 
 	#footer a {
 		color: red;
-		font-family: "Garamond"
-		}  
+	    font-family: 'Karla', sans-serif;
+	}  
 
 	a {
 		color: #000000;
-		font-family: "Garamond", Helvetica, sans-serif;
+	    font-family: 'Karla', sans-serif;
 		font-size: 13px;
 	}
 
 	p {
-	    font-family: "Garamond", Times, serif;
+	    font-family: 'Karla', sans-serif;
 	}
 
 	.wrapper {
@@ -51,10 +51,18 @@
 
 	.content {
 	    border: 0px solid blue; 
-	    overflow: auto;	
 		text-align: center;
+		position: relative;
+		display: block;
+		overflow: hidden;
 	}
 
+	figure {
+		position: absolute;
+		opacity: 0;
+		transition: 1s opacity;
+	}
+	
 	.photos {
 		margin: auto;
 	}
@@ -75,10 +83,10 @@
 	}
 	
 	h1 {
-	    font-size: 60px;
+	    font-size: 50px;
 	    text-align: center;
-	    margin: 0px 0 0px 0px;
-	    font-family: "Garamond", Helvetica, sans-serif;
+	    margin: 0px 0 2px 0px;
+	    font-family: 'Karla', sans-serif;
 	}
 
 	ul {
@@ -89,7 +97,7 @@
 
 	li {
 	    list-style-type:none;
-	    font-family: "Garamond", Times, serif;
+	    font-family: 'Karla', sans-serif;
 	    font-size: 13px;
 	}
 
@@ -142,6 +150,53 @@
 	    padding: 23px;
 	    background-color: white;
 	}
+
+
+
+
+
+
+.next, .prev{
+color: #fff;
+position: absolute;
+background: rgba(0,0,0, .6);
+top: 50%;
+z-index: 1;
+font-size: 2em;
+margin-top: -.75em;
+opacity: .3;
+user-select: none;
+}
+.next:hover, .prev:hover{
+cursor: pointer;
+opacity: 1;
+}
+.next{
+right: 0;
+padding: 10px 5px 15px 10px;
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+.prev{
+left: 0;
+padding: 10px 10px 15px 5px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	@media only screen and (max-width: 700px) {
 	    body {
@@ -310,3 +365,6 @@
 			display: block !important; 
 			
 		}
+
+
+
