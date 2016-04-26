@@ -9,15 +9,7 @@
 
 
 
-		<script type="text/javascript">
 
-if(typeof fname === 'string' && typeof lname === 'string' && regex.test(phone))
-      console.log('Ok. valid user data');
-    else
-      alert('Complete the entire form');
-
-		
-		</script>
 
 
 
@@ -58,19 +50,20 @@ if(typeof fname === 'string' && typeof lname === 'string' && regex.test(phone))
 						<P><em>Win a change for a free vacation!</em></P>	
 						
 						<div>
-							<form name="myForm" onsubmit="return validate()">
-								<label for="fname">First name</label>
-								<input type="text" id="fname" name="firstname"><BR>
-								<label for="lname">Last name</label>
-								<input type="text" id="lname" name="lastname"><BR>
-								<label for="tele">Telephone number</label>
-								<input type="text" id="tele" name="telenumber">
+							<form name="myForm" id="myForm">
+              <label for="fname">First name</label>
+              <input type="text" id="fname" name="firstname">
+              <BR>
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" name="lastname">
+              <BR>
+              <label for="tele">Telephone number</label>
+              <input type="text" id="tele" name="telenumber">
 
-								
 
-								<input type='submit' value='Submit' /><br />
+              <input type='submit' value='Submit' /><br />
 
-							</form>
+            </form>
 						</div>	
 						<p class="read-more">Read more ></p>	
 						<HR>
@@ -128,5 +121,38 @@ if(typeof fname === 'string' && typeof lname === 'string' && regex.test(phone))
 
 
 		</div><!-- #container -->
+	
+<script>
+(function() {
+
+  function validate(e) {
+
+    e.preventDefault();
+
+    var fname = document.getElementById('fname').value,
+        lname = document.getElementById('lname').value,
+        phone = document.getElementById('tele').value;
+
+    //regex example for phone number format
+    var regex = new RegExp('^((([0-9]{3}))|([0-9]{3}))[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$');
+
+    //Validation
+
+    if (typeof fname === 'string' && typeof lname === 'string' && regex.test(phone))
+      console.log('Thanks. Looks good.');
+    else
+      alert('Try again, pal!');
+
+  }
+
+  // Event listner for form submission
+
+  document.getElementById('myForm').addEventListener('submit', validate);
+
+})();
+</script>
+
+
+
 	</body>
 </html>
