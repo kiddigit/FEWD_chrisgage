@@ -1,0 +1,485 @@
+<html>
+<body>
+<head>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="choose.js"></script>
+
+<style>
+body {
+  padding: 10px 200px;
+  background-color: #e6b3ff;
+  font-family: garamond;
+  font-size: 15px; 
+  font-weight: bold;
+}
+
+input {
+  font-family: garamond;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+img  > #top{
+  width: 35%;
+}
+
+button {
+  font-family: garamond;
+  font-size: 14px;
+}
+
+.hiddenText {
+  display: hide;
+}
+
+#greeting {
+  display: none;
+}
+
+
+
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+body {
+  padding: 100px;
+  background-color: #e6b3ff;
+  font-family: garamond;
+  font-size: 35px; 
+  font-weight: bold;
+}
+
+img {
+  width: 65%;
+}
+
+input {
+  font-family: garamond;
+  font-size: 34px;
+    margin-top: 80px;
+}
+
+button {
+  font-family: garamond;
+  font-size: 34px;
+}
+}
+
+#choice1 {display:none;}
+#choice2 {display:none;}
+#choiceA {display:none;}
+#choiceB {display:none;}
+#choiceC {display:none;}
+#choiceD {display:none;}
+#choiceE {display:none;}
+#choiceF {display:none;}
+#choiceG {display:none;}
+#choiceH {display:none;}
+#choiceI {display:none;}
+#choiceJ {display:none;}
+#choiceK {display:none;}
+#choiceL {display:none;}
+#choiceM {display:none;}
+#choiceN {display:none;}
+#choiceO {display:none;}
+#choiceP {display:none;}
+#choiceQ {display:none;}
+#choiceR {display:none;}
+#choiceS {display:none;}
+#choiceT {display:none;}
+#choiceU {display:none;}
+#choiceV {display:none;}
+#choiceW {display:none;}
+#choiceY {display:none;}
+#choiceZ {display:none;}
+#choiceAA {display:none;}
+#choiceBB {display:none;}
+#choiceCC {display:none;}
+#choiceDD {display:none;}
+#choiceEE {display:none;}
+</style>
+</head>
+
+
+
+<body>
+<div id="intro">
+<img id='top' src="http://www.who2.com/wp-content/files/blog/fraz1-thumb-300x418-153.jpg" />
+  <p>Do you like the pic?</p>
+  <p>
+    <input type="submit" name="1st" id="1st" value="Yes">
+  </p>
+  <p>
+    <input type="submit" name="2nd" id="2nd" value="No">
+  </p>
+</div>
+
+
+
+<div id="choice1">
+  <p>Thanks. That means a lot. Let's go on an adventure!</p>
+  <p>Time for more choices . . . Ready?</p>
+  <p>
+    <input type="submit" name="1b" id="1b" value="Yes">
+  </p>
+  <p>
+    <input type="submit" name="1a" id="1a" value="No">
+  </p>
+</div>
+
+<div id="choiceEE">
+  <p>Choose a character.</p>
+<img id='boywarriorpic' src="http://www.talktyria.net/wp-content/uploads/2010/10/Guild-Wars-2-Warrior.jpeg" width="32%"/>
+<img id='girlwarriorpic' src="http://images4.fanpop.com/image/photos/23100000/Warrior-Girl-fantasy-23124472-1024-768.jpg" width="25%"/>
+
+  <p>
+    <input type="submit" name="boywarrior" id="boy" value="Boy warrior">
+  </p>
+  <p>
+    <input type="submit" name="girlwarrior" id="girl" value="Girl warrior">
+  </p>
+</div>
+
+<div id="choiceA">
+  <p>Am I in love?</p>
+  <p>
+    <input type="submit" name="2a" id="2a" value="Sure. Why not.">
+  </p>
+  <p>
+    <input type="submit" name="2b" id="2b" value="Doubt it.">
+  </p>
+</div>
+
+<div id="choiceC">
+  <p>Do I know you?</p>
+  <p>
+    <input type="submit" name="3a" id="3a" value="Yes">
+  </p>
+  <p>
+    <input type="submit" name="3b" id="3b" value="No">
+  </p>
+</div>
+
+<div id="choiceE">
+  <p>We are all stardust and bone fragments.</p>
+  <p>
+    <input type="submit" name="4a" id="4a" value="Oops, we did it again.">
+  </p>
+  <p>
+    <input type="submit" name="4b" id="4b" value="You played with my heart.">
+  </p>
+</div>
+
+
+
+
+
+<div id="choiceG">
+
+  <p>
+  <input type="submit" name="reload" id="reload" value="Go. Be well" onClick="window.location.reload()"></p>
+<!--   <p>
+    <input type="submit" name="5a" id="5a" value="Yes">
+  </p>
+  <p>
+    <input type="submit" name="5b" id="5b" value="No">
+  </p> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="choice2">
+  <p>You chose no. You are dead to me.</p>
+  <P>That's too bad. You could have gone a neat adventure. You could have had a cool name. Go ahead. See what name you would have chosen.<p>
+
+    <P><span id="character-name"></span></p>
+
+     <select onclick='SetName()' id="character-numbers">
+     <option value="0" >Gold Tooth Warrior</option>
+     <option value="1" >Killer Curmudgeon</option>
+     <option value="2" >Magic Mike, the Magician</option>
+     <option value="3" >Sneaky Pete (you'd be a thief)</option>
+     <option value="4" >Sheena Sorcerer</option>
+     <option value="5" >Lady Blood Shall Be Spilt</option>
+     <option value="6" >Sir Death to All</option>
+   </select>
+
+
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+
+
+
+<div id="choiceB">
+  <p>You are walking down a long, dark hallway. You are carrying a lit torch. You come to a door. Do you keep going down the hall or do you open the door?</p>
+  <p>
+    <input type="submit" name="5a" id="5a" value="The hallway.">
+  </p>
+  <p>
+    <input type="submit" name="5b" id="5b" value="The door.">
+  </p>
+</div>
+
+
+
+
+
+<div id="choiceD">
+  <p>You are wrong. But not everyone enjoys bliss.</p>
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+<div id="choiceF">
+  <p>Hi, friend.</p>
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+<div id="choiceH">
+  <p>Such a song.</p>
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+
+
+
+
+
+
+<div id="choiceI">
+  <p>You continue. The hallway goes on for ages. It is made of rough, wet stone. The only sound is the sound of your leather boots scuffling along the floor and the crackling of the burning fire and the arrows in your quiver jostling a bit. Do you keep going or stop and have a bite to eat?</p>
+  <p>
+    <input type="submit" name="7a" id="7a" value="Keep going.">
+  </p>
+  <p>
+    <input type="submit" name="7b" id="7b" value="Stop to have a bite to eat.">
+  </p>
+</div>
+
+
+<div id="choiceJ">
+  <p>You put your hand on the door and push it in slowly. There is no door handle. It moves easily and opens into a room lit with green fire. In the center is an orc. He has not heard you. Do you shoot an arrow at him or do you try to sneek up on him and strangle him?</p>
+  <p>
+    <input type="submit" name="8a" id="8a" value="Arrow.">
+  </p>
+  <p>
+    <input type="submit" name="8b" id="8b" value="I'm feeling good about killing with my own two hands.">
+  </p>
+</div>
+
+
+
+
+
+<div id="choiceM">
+  <p>There's a half-elf running at you. You can shoot him with your arrows if you'd like. </p>
+  <p>
+    <input type="submit" name="13a" id="13a" value="Arrows away!">
+<!--   </p>
+    <input type="submit" name="12b" id="12b" value="Run away.">
+  </p> -->
+</div>
+
+<!-- <div id="choiceV">
+  <p>Arrows away!</p>
+  <p>
+  <p>
+    <input type="submit" name="13a" id="13a" value="Again.">
+  </p>
+  <p>
+    <input type="submit" name="12b" id="12b" value="Run away.">
+  </p>
+</div> -->
+
+
+
+
+
+
+
+
+<div id="choiceW">
+  <p>That wasn't so bad, was it? You're a pretty decent marksperson.</p>
+  <p>
+
+  <p>
+    <input type="submit" name="14a" id="14a" value="Now what? How about a big smile!">
+  </p>
+  <p>
+    <input type="submit" name="14b" id="14b" value="You could use a nap.">
+  </p>
+</div>
+
+
+<div id="choiceY">
+  <img src="https://farm3.static.flickr.com/2609/3709828390_7fa4b806c6.jpg" />
+  <p>
+    There's some of the elf's junk on the floor: a knife, a sword, a potato. They're sort of hazy, like they're popping in and out of reality. You better take them before they disappear. You lunge . . . But you only have time to grab one item . . . </p>
+  <p>
+    <span id="rand"></span>
+  </p>
+    <p>
+    <input type="submit" name="15a" id="15a" value="Let's see what you get!">
+  </p>
+    <p>
+<!--     <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p> -->
+</div>
+
+<div id="choiceDD">
+  <p>
+    <input type="submit" name="reload" id="reload" value="Back to the beginning for you." onClick="window.location.reload()">
+  </p>
+</div>
+
+
+<div id="choiceZ">
+  <img src="http://cache1.asset-cache.net/gc/487793615-knight-of-poland-sleeps-after-the-combat-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=X7WJLa88Cweo9HktRLaNXirRvk2UM7RaZ0snNHrGqY%2BEI0R2AhZgBIgCnOSKtiXiHJLTkY38K1QK9fARw1RP0A%3D%3D" />
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+<div id="choiceN">
+  <p>A rock falls on your head.</p>
+  <p>
+
+<!--     <input type="submit" onclick="location.href='file:///C:/Users/cgage/Dropbox/Public/Photo_Portfolio/Photo_Portfolio_Iteration2/index.html';" name="9a" id="9a" value="You are dead."> -->
+  </p>
+  <p>
+<button id="rollDice">Roll the die to see if you died.</button></p>
+<div id="storenumber">This is the die. It will show you your number: 0</div>
+
+<div id="youDied" style="display:none;">You died.<p>
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+<div id="youLived" style="display:none;">You lived.
+  <p>Nice job. You are a lucky son of a gun.</p>
+  <p>
+    <input type="submit" name="9a" id="9a" value="Retire for the evening.">
+  </p>
+  <p>
+    <input type="submit" name="9b" id="9b" value="Take a break.">
+  </p>
+</div>
+</div>
+  
+</div>
+
+
+<div id="choiceR">
+  <p>You sleep a deep uneventful sleep for many moons. It's good to be awesome.</p>
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+<div id="choiceS">
+  <p>Thanks for playing.</p>
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+<div id="choiceO">
+  <p>Your arrows are straight and true, my friend. You pull back the taut bowstring, the anticipation rising in your gut. You take aim. Draw a shallow breath. Hold it. Fire . . . The orc is dead. You have won his possessions, which, to be frank, are pretty lame.</p>
+  <p>
+    <input type="submit" name="11a" id="11a" value="You now have a blunt ax and a bag of rags.">
+  </p>
+  <p>
+    <input type="submit" name="11b" id="11b" value="What did you expect? It's an orc.">
+  </p>
+</div>
+
+<div id="choiceP">
+  <p>You move closer. You are quiet. You have never been this quiet before. It is like death. You lift your arms up to strangle the beast but he turns around quickly and guts you like the coward you are. As you perish, you hear him say: "Only a man filled with fear attacks from behind, you weak fool."</p>
+  <P>Sorry, I should have gotten your name before your died. Enter your name, friend. </p> 
+  <p>
+    <input type='text' id='userInput' placeholder='Enter Text Here' />
+    <input type='button' onclick='changeName()' value='Tell me your name.'/>
+    <P><span id="greeting">Hello there . . .</span> <span id="name"></span> 
+  </p>
+</div>
+
+<div id="choiceAA">
+<p>You've left a bunch of stuff behind in your death for your foe to take.</p>
+<button id='whatYouFound' onclick="whatYouFound()">Let's see what you left.</button>
+<P><P>
+<p id="demo"></p>
+</div>
+
+
+
+<div id="choiceBB">
+<input type="input" maxlength="40" id="userInput2" onkeyup="showMsg()" placeholder="Enter text here...">
+<p id="userMsg"></p><button onclick="chooseOne()">What does he choose?</button>
+<p id="demo2"></p>
+
+</div>
+
+
+
+<div id="choiceCC">
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+
+
+
+<div id="choiceT">
+  <p>You take it all to the fair to see how much you can get for it. While there, you meet a thief whom you team up with. Together you raid the king's fortress and steal his gold. You buy a boat and hire a crew of sailors. You and the thief sail far from the king and his minions, who are chasing you. Along the way you have to kill the thief because he develops scurvy and goes mad. He was a good friend. You retire like Conan, a wealthy ruler of your own kingdom.</p>
+  <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+</div>
+
+<div id="choiceU">
+  <p>Sorry for being so snotty.</p>
+  <img src="http://pre00.deviantart.net/705c/th/pre/f/2011/341/7/6/human_warrior_by_sabin_boykinov-d4ifgzq.jpg" width="50%"/>
+    <p>
+    <input type="submit" name="reload" id="reload" value="Try again?" onClick="window.location.reload()">
+  </p>
+<!--   <p>
+    <input type="submit" name="11a" id="11a" value="You now have a blunt ax and a bag of rags.">
+  </p>
+  <p>
+    <input type="submit" name="11b" id="11b" value="What did you expect? It's an orc.">
+  </p> -->
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

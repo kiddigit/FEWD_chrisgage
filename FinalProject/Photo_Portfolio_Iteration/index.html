@@ -1,0 +1,502 @@
+<html>
+<head>
+<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+
+<script src="lightbox2-master/dist/js/lightbox.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,user-scalable=no" />
+
+<link href='https://fonts.googleapis.com/css?family=Palanquin' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+
+
+
+<style>
+
+* {
+  border-style: solid;
+  border-width: 0px;
+  border-color: red;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button {
+  border-radius: 10px;
+  color: blue;
+  margin-bottom: 75px;
+  margin-top: 20px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: pink;
+  background-color: #FF6700;
+}
+
+.container {
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: white;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+#final_pic_scroll {
+  margin: 0 auto;
+  height: 650px;
+}
+
+.game p {
+  display: none;
+  margin-left: 0;
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin-top: 10px;
+  font-family: 'Reenie Beanie', cursive;
+  margin-bottom: 50px;
+  color: #0AEEFA;
+  font-size: 99px;
+  text-align: center;
+  margin-left: 10%;
+}
+
+h1:hover {
+  color: #ff0dbf;
+}
+
+img {
+  width: 70%;
+  padding-bottom: 80px;
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url('Facebook_icon.svg');
+  background-size: contain;
+}
+
+.left{
+  position: relative;
+  width: 15%;
+  float: left;
+  border-style: none;
+  border-width: 5px;
+  border-color: #40E0D0;
+  padding-top: 150px;
+}
+
+.name {
+  display: none;
+}
+
+.navigation {
+  list-style: none;
+  background: #ff3399;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.nav-trigger:checked + label {
+    left: 149px;
+}
+
+.nav-trigger:checked ~ .container {
+    left: 150px;
+}
+
+.nav-trigger + label, .container {
+    transition: left 0.2s;
+}
+
+.nav-item {
+  width: 150px;
+  border-top: 0px solid #111;
+  border-bottom: 0px solid #000;
+}
+
+.nav-item a {
+  display: block;
+  padding: 1em;
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #FFA07A;
+}
+
+p {
+  display: inline;
+  margin-left: 20px;
+  font-family: 'Open Sans', cursive;
+  font-size: 11px;
+  color: #ff0dbf;
+}
+
+p:hover {
+  background-color: #FFA07A;
+  color: blue;
+}
+
+.place {
+  display: none;
+}
+
+.right {
+  width: 78%;      
+  float: left;
+  margin: 0;
+  padding-top: 150px;
+}
+
+.sounds {
+  display: none;
+}
+  
+.topnav {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+}
+
+ul {
+  margin: 0;
+  list-style-type:none;
+  text-align: center;
+}
+
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        
+    body {
+      background-color: white;
+      -webkit-padding-start: 0px;
+      margin: 0;
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .first {
+      margin-top: 85px;
+    }
+    
+    .game p {
+      display: block;
+      margin-left: 0;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      margin-left: 0;
+      background: rgba(255, 204, 0, 0.9);
+      padding-top: 12px;
+      margin-bottom: 1px;
+      font-size: 30px;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+
+    img {
+      max-width: 100%;
+      min-width: 100%;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    label[for="nav-trigger"] {
+      display: none;
+    }
+
+    .left {
+      display: none;
+    }
+
+    .name {
+      display: inline;
+      font-family: 'Palanquin', sans-serif;
+      color: black;
+      font-weight: 700;
+      font-size: 13px;
+      margin-left: 5px;
+    }
+
+    .navigation {
+      display: none;
+    }  
+
+    .nav-trigger {
+      display: none;
+    }
+
+    .place {
+      font-family: 'Palanquin', sans-serif;
+      display: inline;
+      font-weight: 200;
+      margin-left: 0;
+      color: black;
+    }
+
+    .right {
+      width: 100%;
+      padding-top: 0px;
+    }
+
+    .sounds {
+      display: block;
+      margin: 0;
+      text-align: center;
+      font-size: 42px;
+      font-family: 'Nothing You Could Do', cursive;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .topnav {
+      position: fixed;
+    }
+         
+    ul {
+      -webkit-padding-start: 0px;
+    }
+  }
+
+
+
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+  
+    img {
+      max-width: 80%;
+      min-width: 80%;
+    }
+
+    label[for="nav-trigger"] {
+      display: none;
+    }
+
+    .navigation {
+      display: none;
+    }  
+
+    .nav-trigger {
+      display: none;
+    }
+}
+
+</style>
+</head>
+
+
+
+<body>
+<ul class="navigation">
+    <li class="nav-item"><a href="#"></a></li>
+    <li class="nav-item"><a href="#"></a></li>
+    <li class="nav-item"><a href="#"></a></li>
+    <li class="nav-item"><a href="#"></a></li>
+    <li class="nav-item"><a id="some_are_good" href="#">some are good</a></li>
+    <li class="nav-item"><a id="some_are_better" href="#">some are better</a></li>
+    <li class="nav-item"><a id="occasionally_bad" href="#">occassionally bad</a></li>
+    <li class="nav-item"><a id="end_of_list" href="choose_your.html">(end of list) (click here)</a></li>
+</ul>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+
+
+<div class="container">
+
+<div class="topnav"><h1>photos</h1></div>
+
+      
+      <div class="left">
+      </div>
+    
+
+      <div class="right">
+        <ul>
+          <li class = "first"></li>
+          <li><a href="Slide01.jpg" data-lightbox="image-1" /></li>
+          <li><img src="P1010821.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>Chinatown somewhere -time</em></p></li>
+          <li><p class="sounds">shazam!</p></li>
+        </ul>
+        <ul>            
+          <li><a href="Slide02.jpg" data-lightbox="image-2" /></li> 
+          <li><img src="P1010807.jpg"></a><br></li>
+          <li><p class= "name">Chris Gage, </li>
+          <li><p class ="place"><em>Tattoo joint; the owner's a rat</em></p></li>
+          <li><p class="sounds">kerrrpow!</p></li>
+        </ul>
+        <ul>  
+          <li><a href="Slide03.jpg" data-lightbox="image-2" /></li> 
+          <li><img src="P1010777.jpg" /></a></li>
+          <li><p class= "name">Chris Gage,<br></p></li>
+          <li><p class ="place"><em>Turck [sic] bumper</em></p></li>
+          <li><p class="sounds">thwack!</p></li>
+        </ul>  
+        <ul>
+          <li><a href="Slide04.jpg" data-lightbox="image-2" /></li> 
+          <li><img src="P1010482.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>Tote things, sir</em></p></li>
+          <li><p class="sounds">zap!</p></li>
+        </ul>  
+        <ul>
+          <li><a href="Slide05.jpg" data-lightbox="image-2" /></li>
+          <li><img src="P1010444.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>This one I call colorful</em></p></li>
+          <li><p class="sounds">ooof!</p></li>
+        </ul>  
+        <ul>
+          <li><a href="Slide06.jpg" data-lightbox="image-2" /></li>
+          <li><img src="P1010474.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>Color part II</em></p></li>
+          <li><p class="sounds">whammy pow!</p></li>
+        </ul>  
+        <ul>
+          <li><a href="Slide07.jpg" data-lightbox="image-2" /></li>
+          <li><img src="P1010482.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>Bride-to-be</em></p></li>
+          <li><p class="sounds">zing blast!</p></li>
+        </ul>  
+        <ul>
+          <li><a href="Slide08.jpg" data-lightbox="image-2" /></li>
+          <li><img src="P1010500.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>We got along famously</em></p></li>
+          <li><p class="sounds">grrr argh!</p></li>
+        </ul>  
+        <ul>
+          <li><a href="Slide09.jpg" data-lightbox="image-2" /></li>
+          <li><img src="P1010505.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>Okay, not too famously</em></p></li>
+          <li><p class="sounds">womp bam!</p></li>
+        </ul>  
+        <ul>
+          <li><a href="Slide10.jpg" data-lightbox="image-2" /></li>
+          <li><img src="P1010927.jpg" /></a><br></li>
+          <li><p class= "name">Chris Gage,</p></li>
+          <li><p class ="place"><em>Saw red, said nothing</em></p></li>
+          <li><p class="sounds">slap punch kick!</p></li>
+        </ul>
+
+        <ul class="game">
+          <a href="choose_your.html"><P>Would you like to place a game?</P></a>
+        </ul>
+        
+        <ul>
+          <li><button id='next'>Have ya seen . . . ?<br>(Keep clicking)</button><div id='final_pic_scroll'></div></li>
+        </ul>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  var arr = ["<img src='P1010964.jpg' />", "<img src='P1010957.jpg' />", "<img src='P1010856.jpg' />", "<img src='IMG_3981.jpg' />", "<img src='IMG_3980.jpg' />"];
+  var index = 0;
+
+$(document).ready(function(){
+  $('#next').click(function(){ 
+    $('#final_pic_scroll').html(arr[index]); 
+    index = (index + 1) % arr.length ;
+ });
+});
+</script>
+
+<script>
+$('#some_are_good').click(function() {
+    $('h1').css({
+        'font-family': 'arial',
+        'color': '#9900cc',
+        'font-size': '74px'
+    });
+});
+
+$('#some_are_better').click(function() {
+    $('h1').css({
+        'font-family': 'times',
+        'color': '#ffff66',
+        'font-size': '94px'
+    });
+});
+
+$('#occasionally_bad').click(function() {
+    $('h1').css({
+        'font-family': 'garamond',
+        'color': '#ff5050',
+        'font-size': '84px'
+    });
+});
+
+$('#end_of_list').click(function() {
+    $('h1').css({
+        'font-family': 'arial',
+        'color': '#00cc99',
+        'font-size': '94px'
+    });
+});
+</script>
+
+</body>
+</html>
