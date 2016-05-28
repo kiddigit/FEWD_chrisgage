@@ -1,0 +1,78 @@
+<title>Flashcards</title>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<style>
+.flashcardFront {
+	height: 200px;
+	width: 400px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px; 
+	background-color: black;
+	color: white;
+	font-family: arial;
+	font-size: 22px;
+	margin: 120px auto;
+	padding: 50px;
+	border-radius: 30px;
+}
+
+.flashcardBack {
+	display: none;
+	height: 200px;
+	width: 400px;
+	border-color: blue;
+	border-style: solid;
+	border-width: 1px; 
+	background-color: blue;
+	color: white;
+	font-family: arial;
+	font-size: 22px;
+	margin: 120px auto;
+	padding: 50px;
+	border-radius: 30px;
+}
+
+
+</style>
+
+
+
+
+<body>
+<div class="flashcardFront">Start studying</div>
+	
+<div class="flashcardBack"></div>
+</body>
+
+
+
+
+<script>
+var arr = [
+			"Q: What's my name?",'A: Heck no.',
+			'Q: My age?',"A: Cool kids don't say.", 
+			'Q: Fave rocker?','A: Paul Gilbert'
+			];
+for (i = 0; i < arr; i++)
+	
+
+var count = 0;
+for (x = 1; x < count; x++)
+
+
+$().hide
+	$(".flashcardFront").click(function(){
+	    $('.flashcardBack').show();
+	    $('.flashcardFront').hide();
+	    $('.flashcardBack').html(arr[i++] + '<p>' + [x++]);
+	});
+
+	$(".flashcardBack").click(function(){
+	    $('.flashcardFront').show();
+	    $('.flashcardBack').hide();
+	    $('.flashcardFront').html(arr[i++]);
+	});
+
+</script>
