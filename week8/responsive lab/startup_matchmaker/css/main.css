@@ -201,6 +201,9 @@ footer {
 		#bye {
 			display: none;
 		}
+		.touts {
+			width: 100%; 
+		}
 
 
 

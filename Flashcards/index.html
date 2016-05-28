@@ -1,78 +1,74 @@
 <title>Flashcards</title>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <style>
-.flashcardFront {
-	height: 200px;
-	width: 400px;
-	border-color: black;
-	border-style: solid;
-	border-width: 1px; 
+#flashcardFront {
+	margin-top: 100px;
+	margin-left: 400px;
+	width: 300px;
+	height: 50px;
 	background-color: black;
 	color: white;
 	font-family: arial;
 	font-size: 22px;
-	margin: 120px auto;
-	padding: 50px;
-	border-radius: 30px;
+	text-align: center;
+	padding: 50px 0;
+	display: block;
 }
 
-.flashcardBack {
-	display: none;
-	height: 200px;
-	width: 400px;
-	border-color: blue;
-	border-style: solid;
-	border-width: 1px; 
-	background-color: blue;
-	color: white;
-	font-family: arial;
-	font-size: 22px;
-	margin: 120px auto;
-	padding: 50px;
-	border-radius: 30px;
+a:link {
+    text-decoration: none;
 }
 
-
+#number {
+	color: red;
+	position: relative;
+	left: -120px;
+	top: 30px;
+}
 </style>
 
 
 
 
 <body>
-<div class="flashcardFront">Start studying</div>
 	
-<div class="flashcardBack"></div>
+	<a id="flashcardFront" href="#" onclick="flashCards();"></a>
+</div>
 </body>
 
 
 
 
 <script>
-var arr = [
-			"Q: What's my name?",'A: Heck no.',
-			'Q: My age?',"A: Cool kids don't say.", 
-			'Q: Fave rocker?','A: Paul Gilbert'
-			];
-for (i = 0; i < arr; i++)
-	
+var myArray = [];                               
 
-var count = 0;
-for (x = 1; x < count; x++)
+for (var i = 0; i < 2; i++) {              // # of loops 
+  myArray.push(prompt('Enter question ' + (i+1))); // push the value into the array
+  myArray.push(prompt('Enter answer ' + (i+1))); // push the value into the array
+}
+/*var myArray = [
+  "Q: What's my name?", 'A: Heck no.',
+  'Q: My age?', "A: Cool kids don't say.",
+  'Q: Fave rocker?', 'A: Paul Gilbert'
+];*/
+var myIndex = 0;
 
+function renderQuestion(index) {
+  // render number if index is even
+  var str = myArray[index]
+  if (index % 2 == 0) {
+    str += '<br><span class="question-number">' + (index / 2 + 1) + '</span>'
+  }
+  return str
+}
 
-$().hide
-	$(".flashcardFront").click(function(){
-	    $('.flashcardBack').show();
-	    $('.flashcardFront').hide();
-	    $('.flashcardBack').html(arr[i++] + '<p>' + [x++]);
-	});
+function flashCards() {
+  var flashcardFront = document.getElementById('flashcardFront');
+  flashcardFront.innerHTML = renderQuestion(myIndex);
+  myIndex = (myIndex + 1) % (myArray.length);
+}
 
-	$(".flashcardBack").click(function(){
-	    $('.flashcardFront').show();
-	    $('.flashcardBack').hide();
-	    $('.flashcardFront').html(arr[i++]);
-	});
-
+flashCards()
+console.log("kewl");
 </script>
