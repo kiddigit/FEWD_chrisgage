@@ -290,3 +290,139 @@ footer p {
 
 
 
+
+
+	@media only screen and (max-width: 575px) {
+	
+	* {
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+	}
+	nav {
+		position: absolute;
+    margin-left: 400px;
+	}
+	nav ul {
+		display: none;
+	}
+	header {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	h1 {
+		margin-left: 20px;
+	}
+	body {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+	#posts {
+		width: 100%;
+	}
+	#main {
+		margin-top: 10px;
+	}
+	.post img {
+		width: 95%;
+	}
+	.post h2 {
+		font-size: 30px;
+	}
+	.post p {
+		font-size: 18px;
+	}
+	#sidebar h3 {
+		font-size: 20px;
+	}
+	#sidebar ul li a {
+		font-size: 18px;
+	}
+	#bottom-cta {
+		padding: 10px;
+	}
+	.blue {
+		font-size: 18px;
+	}
+	.button {
+		padding: 8px;
+		width: 200px;
+	}
+	#sidebar {
+		width: 100%;
+	}
+	#sidebar ul li a {
+		font-size: 15px;
+	}
+	#sidebar h3:first-of-type {
+		margin-bottom: 0;
+	}
+	footer .logo {
+	font-size: 20px;
+	}
+	.copyright {
+		font-size: 15px;
+	}
+	li {
+		display: block;
+		padding: 0px;
+	}
+	#ad {
+		display: none;
+	}
+	#sidebar ul {
+		margin-bottom: 20px;
+	}
+	#sidebar p {
+		font-size: 15px;
+	}
+	footer {
+		padding: 10px 0 10px;
+	}
+	footer .logo {
+		margin-bottom: 0px;
+	}
+	footer ul li {
+		margin: 0 10px 10px;
+	}
+	header nav ul li {
+		display: block;
+		margin-right: 20px;
+		margin: 0 20px 0 0;
+	}
+	.hamburger {
+		margin-top: 5px;
+		margin-right: 80px;
+		margin-bottom: 20px;
+		float:right;
+	    position: relative;
+	    display: inline-block;
+	    width: 1.5em;
+	    height: 0.74em;
+	    border-top: 0.2em solid #fff;
+	    border-bottom: 0.2em solid #fff;
+	}
+	.hamburger:before {
+	    content: "";
+	    position: absolute;
+	    top: 0.9em;
+	    left: 0px;
+	    width: 100%;
+	    border-top: 0.2em solid #fff;
+	}
+	nav ul {	
+		position: absolute;
+		left: 0; top: 100%;  
+		width: 100%; 
+		background-color: black;
+		z-index: 99;
+	}
+
+
+	
+	}
+

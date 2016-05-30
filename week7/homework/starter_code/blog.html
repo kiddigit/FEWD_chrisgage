@@ -3,6 +3,9 @@
 	<head>
     	<meta charset="utf-8">
     	<meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 
 		<title>Relaxr Blog</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
@@ -16,7 +19,9 @@
 		<header>
 			<div class="container">
 				<h1 class="logo">Relaxr</h1>
+				
 				<nav>
+					<a href='#'><span class="hamburger"></span></a>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="#">About</a></li>
@@ -54,9 +59,9 @@
 						<li><a href="#">Business tips</a></li>
 					</ul>
 					<h3>About Relaxr</h3>
-					<p>Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.<br>
+					<p>Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.
 					<a href="">Learn More</a></p>
-					<img src="images/ad-unit.png" alt="Ad Unit">
+					<img id="ad" src="images/ad-unit.png" alt="Ad Unit">
 				</aside>
 			</div>
 		</section>
@@ -74,5 +79,12 @@
 
 			<p class="copyright">Copyright 2015. Relaxr.</p>
 		</footer>
+
+<script>
+$(".hamburger").click(function(e){
+    $("nav > ul").toggle();
+});
+</script>
+
 	</body>
 </html>

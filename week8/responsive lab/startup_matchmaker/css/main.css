@@ -188,7 +188,7 @@ footer {
 
 
 
-	@media only screen and (max-width: 675px)
+	@media only screen and (max-width: 768px)
 	{
 
 
@@ -201,10 +201,49 @@ footer {
 		#bye {
 			display: none;
 		}
-		.touts {
-			width: 100%; 
+		
+		#col1 {
+			width: 95%;
+		}
+		#col2 {
+			width: 95%;
+		}
+		#col3 {
+			width: 95%;
+		}
+		#blog {
+			display: hide;
+		}
+		#page-header nav {
+		}
+		li {
+			float: none;
+			display: none;
+		}
+		#page-header nav a {
+			display: block;
+			padding: 20px 15px;
+		}
+		#page-header nav li a:hover {
+			color: yellow;
+		}
+		#page-header nav li.active a {
+			background: #666;
+		}
+		#page-header nav strong {
+			font-family: 'Oswald', sans-serif;
+			text-transform: uppercase;
+		}
+		#page-header nav strong a {
 		}
 
+		#burger {
+			margin-left: 100%;
+		}
+		nav {
+			overflow: hidden;
+		}
+	}
 
 
 
