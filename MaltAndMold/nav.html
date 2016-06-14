@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Your description goes here">
+      <meta name="keywords" content="one, two, three">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malt and Mold</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/myCSS.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/boxing_media_query.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+<body>
+
+<!-- <style>
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,700');
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width:100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 1em 'Roboto', sans-serif;
+  color: #555;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+h1 {
+  padding: 30px 0;
+  font: 1.5em 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+nav {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+ul a {
+  display: block;
+  padding: 20px;
+  padding-right: 0 !important; /* important overrides media queries */
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #aaa;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul a:hover {
+  background: #eee;
+}
+
+nav li {
+  float: left;
+  width: 16%;
+  border-right: 1px solid #ddd;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+</style>
+ -->
+
+
+
+<body>
+<p id='banner'>BROOKLYN BREWING @ GRAMERCY FRIDAY 5-8 PM : KUKA BREWERY @ LES THURSDAY 5-8 PM</p>
+<header>
+  <h1><a href="header.html">Malt and Mold</h1></a>
+  <nav>
+    <a href="#" class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </a>
+    <ul class="clearfix menu">
+      <li><a href="header.html">Home</a></li>
+      <li><a href="page3.html">Gift Baskets and Catering</a></li>
+      <li><a href="page8.html">Tasting Calendar</a></li>
+      <li><a href="page7.html">Membership</a></li>
+      <li><a href="page8.html">Special Events</a></li>
+      <li><a href="page9.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+<div id = "body">
+  <div id = "box_left">
+    <p id="store"><a href="page1.html">LES Store</p>
+    <img src="images/LES_Store.jpg" />
+    <p id="store_info">
+      221 East Broadway<br>
+      @ Clinton Street<br>
+      New York, NY 10002<br><br>
+ 
+      HOURS<br>
+      Mon-Fri: 12pm-8pm<br>
+      Sat and Sun: 12pm-7pm<br><br>
+        
+      BEER TASTING:<br>
+      Every Thursday<br>
+      5pm - 8pm<br>
+      and<br>
+      Every Saturday<br> 
+      3pm - 6pm<br></a>
+    </p>
+  </div>
+  
+  <div id = "box_right">
+    <p id="store"><a href="page2.html">Gramercy Store</p>
+    <img src="images/Gramarcy_Store.jpg" />
+    <p id="store_info">
+      364 Second Avenue<br>
+      @ 21st Street<br>
+      New York, NY 10010<br><br>
+       
+      HOURS<br>
+      Mon-Sat: 12pm-8pm<br>
+      Sun: 12pm-7pm<br><br>
+
+      BEER TASTING:<br>
+      Every Friday<br>
+      5pm - 8pm<br></a>
+    </p>
+  </div>
+</div>
+
+
+
+<!-- <footer>
+  <ul id="social">
+    <li><a  target="_blank" href="https://twitter.com/maltandmold"><img class="social_icons" src="images/twitter.png"></li></a>
+
+    <li><a  target="_blank" href="https://www.facebook.com/Malt-and-Mold-149401851842256/"><img class="social_icons" src="images/facebook.png"></li></a>
+
+    <li><a  target="_blank" href="https://www.instagram.com/maltandmold/"><img class="social_icons" src="images/instagram.png"></li></a>
+  </ul>
+</footer>
+
+ -->
+
+<script>
+$('.hamburger').on('click tap', function(e) {
+    e.preventDefault();
+    $('.menu').toggleClass('slide-down');
+});
+</script>
+</body>
+
+
+<!-- 
+<style>
+#social {
+  text-align: center;
+}
+#social li  {
+  display: inline-block;
+  margin: 5px 0 5px 0;
+  width: 33.33%;
+
+}
+
+
+</style>
+
+<body>
+
+<div id = "body">
+  <div id = "pg2_box_one">
+    <p id="store">Beer</p>
+    <img src="images/LES_Store_beer_page1.jpg" />
+  </div>
+
+
+  <div id = "pg2_box_two">
+    <p id="store">Provisions</p>
+    <img src="images/LES_Store_cheese_page1.jpg" />
+  </div>
+
+
+  <div id = "pg2_box_three">
+    <p id="store">Cheese</p>
+    <img src="images/LES_Store_provisions_page1.jpg" />
+  </div>
+
+  <div id = "pg2_box_four">
+    <p id="store">Cheese</p>
+    <img src="images/LES_Store_provisions_page1.jpg" />
+  </div>
+
+
+  <div id = "pg2_box_five">
+    <p id="store_margin">Sandwich</p>
+    <img src="images/LES_Store_provisions_page1.jpg" />
+  </div>
+
+</div>
+
+ -->
+</body>

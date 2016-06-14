@@ -1,0 +1,609 @@
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,700');
+
+*, a, li {
+    cursor: pointer;
+}
+
+*, *:before, *:after {
+  border: 0px solid black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width:100%;
+}
+
+/*link styles*/
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/*navigation specific styles*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 1em 'Open Sans', sans-serif;
+  color: #555;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+/*  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;*/
+}
+
+h1 {
+  padding: 30px 0;
+  font: 1.5em 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+nav {
+/*  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;*/
+/*  background-color: #f5f5f5;*/
+}
+
+ul a {
+  display: block;
+  padding: 10px;
+  /*padding-right: 0 !important;*/ /* important overrides media queries */
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul a:hover {
+  background: #eee;
+}
+
+nav li {
+  float: left;
+  width: 16.5%;
+/*  border-right: 1px solid #ddd;*/
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+
+
+
+
+
+
+
+
+/*index page styles*/
+#store_info {
+  margin-top: 20px;
+  text-align: center;
+}
+#store {
+  text-align: center;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#banner {
+  text-align: center;
+  color: red;
+  margin-top: 40px;
+}
+#box_left {
+  float: left;  
+  width: 48%;
+  height: 100%;
+}
+#box_right {
+  float: right; 
+  width: 48%;
+  height: 100%;
+}
+
+
+
+
+
+/*page1 specific styles*/
+#body_page1 #pg1_box_left img {
+/*  float: left;  */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+/*  margin-right: 10px;*/
+}
+#body_page1 #pg1_box_middle img{
+/*  float: right; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+#body_page1 #pg1_box_right img{
+/*  margin-right: 20px;
+  float: right; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.pg1_mainImage {
+  margin-top: 20px;
+  height: 400px;
+}
+#pg1_mainImage_text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+#storea {
+  text-align: center;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#body_page1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*page 2 specific styles*/
+#pg2_mainImage_text {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+#body_page1 #pg2_box_one img{
+/*  float: right; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+#body_page1 #pg2_box_two img{
+/*  float: right; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+#body_page1 #pg2_box_three img{
+/*  float: right; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+#body_page1 #pg2_box_four img{
+/*  float: right; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+#store_2line {
+  text-align: center;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sandwich_menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#pg2_box_five {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*page3 specific styles*/
+@import "compass/css3";
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+
+article {
+ -moz-column-width: 13em;
+ -webkit-column-width: 13em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap: 1em; 
+}
+section {
+ display: inline-block;
+ margin:  0.25rem;
+ padding:  1rem;
+ width:  100%; 
+ background:  #efefef;
+}
+p {
+ margin:  1rem 0; 
+}
+#basketTitle {
+  font-weight: 700;
+}
+
+
+
+
+/*page4 specific styles*/
+#menu_widget {
+  width: 100%;
+  margin: 40px auto !important;
+}
+
+
+
+
+/*page5 specific styles*/
+#masonry_nav {
+  margin: 20px;
+  font-weight: 800;
+}
+
+
+
+
+/*page7 specific styles*/
+#membership {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/*page9 specific styles*/
+
+#box_lefta {
+  float: left;  
+  width: 48%;
+  height: 100%;
+}
+#box_righta {
+  float: right; 
+  width: 48%;
+  height: 100%;
+}
+#youtube {
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+
+
+
+
+/*page 13 specific styles*/
+#pg13_box {
+  display: inline;
+  width: 100%;
+}
+#page13 {
+  width:33%;
+}
+#pg13_text{
+  width: 100%;
+  }
+#pg13_photo {
+  width: 50%;
+  margin: 0 25%;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+/*footer specific styles*/
+#social {
+  text-align: center;
+}
+#social li  {
+  display: inline-block;
+  margin: 20px 0 0px 0;
+  width: 20.33%;
+}
+footer {
+  clear: both;
+}
+.social_icons {
+  width: 35%;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+      @media only screen and (max-width: 480px) {
+        
+        * {
+          cursor: pointer;
+        }
+
+        .hamburger {
+          padding: 15px;
+          display: block;
+        }
+
+        .line {
+          border-bottom: 4px solid #bbb;
+          width: 35px;
+          margin-bottom: 6px;
+        }
+        
+        .line:last-child {
+          margin-bottom: 0;
+        }
+
+        nav li {
+          width: 100%;
+        }
+        
+        .menu {
+          height: 0;
+          overflow: hidden;
+          transition: height 0.3s linear;
+        }
+        
+        .slide-down {
+          height: 262px;
+        }
+
+
+        /*link styles*/
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+
+
+
+
+        /*index page specific styles*/
+
+        #store_info {
+          font-size: 12px;
+        }
+        #banner {
+          text-align: center;
+          color: red;
+          font-size: 12px;
+          margin-top: 20px;
+        }
+        h1 {
+          padding: 30px 0;
+          font: 1.5em 'Open Sans', sans-serif;
+          padding: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*page1 specific styles*/
+        #pg1_box_left {
+          float: left;  
+          width: 48%;
+          height: 100%;
+          margin-right: 10px;
+        }
+        #pg1_box_middle {
+          float: right; 
+          width: 48%;
+          height: 100%;
+        }
+        #pg1_box_right {
+          margin: 0 auto;
+          float: none; 
+          width: 48%;
+          height: 100%;
+        }
+        .pg1_mainImage {
+          margin-top: 20px;
+          height: 200px;
+        }
+        #pg1_mainImage_text {
+          font-weight: 600;
+        }
+        #storea {
+          text-align: center;
+          display: inline-block;
+          font-weight: 800;
+          margin-top: 40px;
+          margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+        /*page2 specific styles*/
+        #store2 {
+          text-align: center;
+          font-weight: 800;
+          margin-top: 0px;
+          margin-bottom: 18px;
+        }
+        #pg2_mainImage_text {
+          font-weight: 600;
+        }
+        #sandwich_menu {
+          font-size: 14px;
+        }
+        #pg2_box_four {
+          float: right; 
+          width: 25%;
+          height: 100%;
+          margin-bottom: 20px;
+        }
+        #store_2 {
+          text-align: center;
+          font-weight: 800;
+          margin-top: 20px;
+          margin-bottom: -3px;
+        }
+        #store_2line {
+          text-align: center;
+          font-weight: 800;
+          margin-top: 20px;
+          margin-bottom: -3px;
+        }
+
+
+
+
+
+
+        /*page4 specific styles*/
+        #menu_widget {
+          font-size: 12px;
+          padding-left: 10px !important;
+          margin: 0 !important;
+          margin: 40px auto !important;
+        }
+
+
+
+
+
+
+        /*page7 specific styles*/
+        #membership {
+          font-size: 13px;
+        }
+
+
+
+
+
+
+      /*page9 specific styles*/
+
+      #box_lefta {
+        float: left;  
+        width: 100%;
+        height: 100%;
+      }
+      #box_righta {
+        float: right; 
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+
+
+
+
+
+      /*page 13 specific styles*/
+      #page13 {
+        width:100%;
+      }
+      #pg13_photo {
+        width: 100%;
+        margin: 40px 0;
+       }
+
+
+
+
+
+
+      }
